@@ -1,0 +1,129 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCA Class Timetable</title>
+    <style>
+        table{
+           width: 100%;
+           border-collapse:collapse;
+           font-family:'segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+           margin:20px 0;
+           box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        th,td{
+           border: 1px solid #bdc3c7;
+           padding: 12px;
+           text-align: center;
+        }
+        th{
+           background-color: #2c3e50;
+           color: white;
+           font-weight:600;
+        }
+        tr:nth-child(even) td{
+           background-color:#f8f9fa;
+        }
+        .day-column{
+           font-weight: bold;
+           background-color: #eaeded !important;
+           color: #2c3e50;
+           width: 10%;
+        }
+        .break {
+           font-weight: bold;
+           background-color:#f5b041 !important;
+           color:white;
+           letter-spacing:3px;
+        }
+        .lab{
+           background-color: #d4efdf !important;
+           font-weight: 500;         
+           color: #196f3d;
+        }
+        .subject{
+           font-weight: 600;
+           display: block;
+           color: #2e4053;
+        }
+        .faculty
+           font-size: 0.85em;
+           color: #7f8c8d;
+           font-style: italic;
+        }
+        .room{
+           font-size: 0.85em;
+           color: #34495e;
+           font-weight: bold;
+           display: block;
+           margin-top: 4px;
+        }
+    </style>
+</head>       
+<body>
+ 
+    <table>
+        <thead>
+            <tr>
+                <th>Day/period</th>
+                <th>period 1<br>09:00 AM-10:00 AM</th>
+                <th>period 2<br>10:00 AM-11:00 AM</th>
+                <th>period 3<br>11:00 AM-12:00 AM</th>
+                <th>lunch break<br>12:00 PM-01:00 PM</th>
+                <th>period 4<br>01:00 PM-02:00 PM</th>
+                <th>period 5<br>02:00 PM-03:00 PM</th>
+                <th>period 6<br>03:00 PM-04:00 PM</th>
+            </tr>         
+        </thead>
+        <tbody>
+            <tr>
+                <td class="day-column">Monday</td>
+                <td><span class="subject">Database Management</span><span class="faculty">Dr. A. Sharma</span>,<span class="room">room 02</span></td>
+                <td><span class="subject">Data Structures</span><span class="faculty">prof. R. verma</span>,<span class="room">room 02</span></td>
+                <td><span class="subject">Operating System</span><span class="faculty">Dr. S.K. Singh</span>,<span class="room">room 04</span></td>
+                <td rowspan="5" class="break">LUNCH<br>BREAK</td>
+                <td><span class="subject">Discrete math</span><span class="faculty">prof. M. gupta</span>,<span class="room">room 02</span></td> 
+                <td colspan="2" class="lab"><span class="subject">Data Structures Lab</span><span class="faculty">prof. R. Verma</span>,<span class="room">Lab3 (Ground floor)</span></td>
+            </tr>
+            <tr>
+                <td class="day-column">Tuesday</td>
+                <td><span class="subject">Operating System</span><span class="faculty">Dr. S.K. Singh</span>,<span class="room">room 04</span></td>
+                <td><span class="subject">Database Management</span><span class="faculty">Dr. A. Sharma</span>,<span class="room">room 02</span></td>
+                <td><span class="subject">discrete math</span><span class="faculty">prof. M. verma</span>,<span class="room">room 02</span></td>
+                <td><span class="subject">Data Structures</span><span class="faculty">prof. R. verma</span>,<span class="room">room 02</span></td>
+                <td colspan="2" class="lab"><span class="subject">DBMS Lab</span><span class="faculty">Dr. A. Sharma</span>,<span class="room">Lab1 (First floor)</span></td>
+            </tr>
+            <tr>
+                <td class="day-column">Wednesday</td>
+                <td colspan="2" class="lab"><span class="subject">Web Technology Lab</span><span class="faculty">Dr. Neha Raj</span>,<span class="room">Lab4 (Second floor)</span></td>
+                <td><span class="subject">Operating System</span><span class="faculty">Dr. S.K. Singh</span>,<span class="room">room 04</span></td>
+                <td><span class="subject">Database Management</span><span class="faculty">Dr. A. Sharma</span>,<span class="room">room 02</span></td>
+                <td><span class="subject">Software Eng.</span><span class="faculty">prof. P. kumar</span>,<span class="room">room 05</span></td>
+                <td><span class="subject">discrete math</span><span class="faculty">prof. M. Gupta</span>,<span class="room">room 02</span></td>
+            </tr>
+            <tr>
+                <td class="day-column">Thursday</td>
+                <td><span class="subject">Software Eng.</span><span class="faculty">prof. P. kumar</span>,<span class="room">room 05</span></td>
+                <td><span class="subject">Data Structures</span><span class="faculty">Prof. R. verma</span>,<span class="room">room 02</span></td>
+                <td><span class="subject">discrete math</span><span class="faculty">prof. M. Gupta</span>,<span class="room">room 02</span></td>
+                <td><span class="subject">Operating System</span><span class="faculty">Dr. S.K. Singh</span>,<span class="room">room 04</span></td>
+                <td><span class="subject"></span>Web Technology<span class="faculty">Dr. Neha Raj</span>,<span class="room">room 05</span></td>
+                <td><span class="subject">Library/Seminar</span><span class="faculty">Department Staff</span>,<span class="room">Seminar Hall</span></td>
+             </tr>   
+             <tr>
+                <td class="day-column">Friday</td>
+                <td><span class="subject">Web Technology</span><span class="faculty">Dr. Neha Raj</span>,<span class="room">room 05</span></td>
+                <td><span class="subject">Software Eng.</span><span class="faculty">prof. P. kumar</span>,<span class="room">room 05</span></td>
+                <td><span class="subject">Database Management</span><span class="faculty">Dr. A. Sharma</span>,<span class="room">room 02</span></td>
+                <td><span class="subject">Web Technology</span><span class="faculty">Dr. Neha Raj</span>,<span class="room">room 05</span></td>
+                <td colspan="2" class="lab"><span class="subject">Project Work/Lab</span><span class="faculty">All Faculty</span>,<span class="room">Lab 3 & 4</span></td>
+            </tr>
+         </tbody>
+       </table>
+</body>
+</html>
+
+
+
+
+
+
