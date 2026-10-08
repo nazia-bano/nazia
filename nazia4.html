@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Spring Carnival Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        .gallery-title {
+            text-align: center;
+            color: #333;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .gallery-item {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            margin: 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-item figcaption {
+            padding: 12px;
+            font-size: 0.95rem;
+            color: #555;
+            border-top: 1px solid #eee;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="gallery-title">Annual Spring Carnival Highlights</h1>
+    
+    <div class="gallery-grid">
+        <!-- Image 1: Informative Event Photo -->
+        <figure class="gallery-item">
+            <img src="carnival-crowd.jpg" 
+                 alt="A crowded campus quad filled with colorful carnival game booths, inflatable slides, and students walking under sunny skies." 
+                 width="400" 
+                 height="200" 
+                 loading="lazy">
+            <figcaption>Students gather at the central quad for the outdoor game booths and activities.</figcaption>
+        </figure>
+
+        
+        <figure class="gallery-item">
+            <img src="award-ceremony.jpg" 
+                 alt="A female student in a red graduation gown smiles as she shakes hands and accepts a trophy from a university official on a stage." 
+                 width="400" 
+                 height="200" 
+                 loading="lazy">
+            <figcaption>Senior Maya Lin receives the Outstanding Student Leadership Award during the evening ceremony.</figcaption>
+        </figure>
+
+        <!-- Image 3: Presentation/Slide Content -->
+        <figure class="gallery-item">
+            <img src="robotics-display.jpg" 
+                 alt="Two engineering students adjusting a silver four-legged robotic dog prototype on a presentation table." 
+                 width="400" 
+                 height="200" 
+                 loading="lazy">
+            <figcaption>The Robotics Club demonstrations highlighted cutting-edge student projects this year.</figcaption>
+        </figure>
+    </div>
+
+</body>
+</html>
