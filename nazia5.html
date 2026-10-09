@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department Navigation Page</title>
+    <style>
+        /* Reset basic styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header and Navigation Styling */
+        header {
+            background-color: #003366; /* Deep Academic Blue */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        .logo a {
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-item {
+            margin-left: 20px;
+        }
+
+        .nav-link {
+            color: #e0e0e0;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        /* Hover and Active states */
+        .nav-link:hover {
+            color: #ffffff;
+            background-color: #004488;
+        }
+
+        .nav-link.external:hover {
+            background-color: #d97706; /* Distinct color for external link hover */
+        }
+
+        /* Main Content Styling */
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            color: #003366;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #e2e8f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            vertical-align: middle;
+        }
+    }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="nav-container">
+            <div class="logo">
+                <a href="#home">CS Department</a>
+            </div>
+            <ul class="nav-menu">
+                <!-- Internal Links (Within the same website/page) -->
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+                <li class="nav-item"><a href="#faculty" class="nav-link">Faculty</a></li>
+                <li class="nav-item"><a href="#labs" class="nav-link">Labs</a></li>
+                <li class="nav-item"><a href="#assignments" class="nav-link">Assignments</a></li>
+                <li class="nav-item"><a href="#notices" class="nav-link">Notices</a></li>
+                <li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
+                <!-- External Link (To a different website entirely) -->
+                <li class="nav-item"><a href="https://university-main-portal.com" target="_blank" rel="noopener noreferrer" class="nav-link external">Contact <span class="badge">EXT</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to the Department Portal</h1>
+        <p>Use the navigation menu above to browse through our department resources, schedules, and directories.</p>
+        <p>This layout uses a professional, responsive navigation bar featuring clean typography and visual feedback when hovering over choices.</p>
+    </main>
+
+</body>
+</html>
